@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chillax.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="script.js"></script>
+
+    <title>chena</title>
+</head>
+<body>
+    <header>
+
+
+      
+<style>
+
+  .mobile-nav {
+    /* padding: 5%; */
+    
+      position: absolute;
+      top: 85px; /* Adjust the top positioning as needed */
+    
+      left: 50%;
+    transform: translateX(-50%);      /* right: 15px; 
+      left:15px; */
+      width:  85%; 
+      /* width: 93.5vw; */
+      /* margin-right: 5vw; */
+
+      /* padding: 32px 64px 0px 15px; */
+      /* margin: 10vw ; */
+      background-color: #222; /* Change this to your desired background color */
+      color: #fff; /* Change this to your desired text color */
+      font-family: 'Chillax-Regular';
+      border-radius: 10px; /* Add rounded corners */
+
+
+    }
+  
+    /* Style for each menu item */
+    .mobile-nav div {
+      padding: 22px 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 10px; /* Add rounded corners */
+
+    }
+  
+    /* Hover effect for menu items */
+    .mobile-nav div:hover {
+      background-color: rgba(255,255,255,.05); 
+
+    }
+    /* Your existing styles here */
+
+.mobile-nav {
+  display: none;
+  /* Other styling properties */
+}
+#closeMenuToggle {
+  display: none;
+  /* Other styling properties */
+}
+  
+  </style>
+
+
+
+
+  <div id="mobileNav" class="mobile-nav">
+    <div id="Home_mob"  class="Home">Home</div>
+    <div id="work_mob"  class="work">Work</div>
+    <div id="about_mob" class="about">About</div>
+  
+  </div>
+      
+ <div class="content">
+        <div class="logo">
+            <a href="./index.html">
+               
+                <img src="image\65656.png" alt="">
+            
+    </a>
+
+       <span>available</span>
+        </div>
+
+
+
+    
+            
+        
+
+
+
+
+
+
+
+        <nav>
+          <div id="menuToggle">
+            <img  src="image/Menu_Icon.png" alt="">
+
+          </div>
+
+          <div id="closeMenuToggle">
+            <img  src="image/close.png" alt="">
+
+          </div>
+            <ul>
+                <li>
+                    <a id="Home" href="#" >Home</a>
+                </li>
+                <li>
+                    <a id="work" href="#">work</a>
+                </li>
+                <li>
+                    <a id="about" href="#">about</a>
+                </li>
+                <a href="./contact.html">
+                    <button>let's talk</button>
+
+                </a>
+
+            </ul>
+         
+        </nav>
+    </div>
+    </header>
+    <script>
+
+
+      const menuToggle = document.getElementById("menuToggle");
+      const closeMenuToggle = document.getElementById("closeMenuToggle");
+      const mobileNav = document.getElementById("mobileNav");
+      
+      menuToggle.addEventListener("click", function () {
+        // Toggle icon transformation
+        menuToggle.style.transform = "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-39deg) skew(0deg, 0deg) transform-style: preserve-3d;";
+        menuToggle.style.display = "none";
+        closeMenuToggle.style.display = "block";
+
+
+        // Display mobile navigation with animation
+        mobileNav.style.display = "block";
+        mobileNav.style.animation = "fade-in 0.5s";
+      });
+      
+      // Function to scroll to a specific section
+      function scrollToSection(selector) {
+        const section = document.querySelector(selector);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+
+      closeMenuToggle.addEventListener("click", function () {
+        // Toggle icon transformation
+        closeMenuToggle.style.transform = "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-39deg) skew(0deg, 0deg) transform-style: preserve-3d;";
+        closeMenuToggle.style.display = "none";
+        menuToggle.style.display = "block";
+
+
+        // Display mobile navigation with animation
+        mobileNav.style.display = "none";
+        mobileNav.style.animation = "fade-in 0.5s";
+      });
+      
+      // Function to scroll to a specific section
+      function scrollToSection(selector) {
+        const section = document.querySelector(selector);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+      
+      </script>
+    <section id="section1">
+        <div class="landing">
+
+
+
+            <div class="text">
+    <h1 class="home-title-animation">brand Design <br> & Illustrator</h1>
+    <p class="home-sub-title-animation">Premium Web Design, Brand Design, and services to help your business stand out.</p>
+    
+            </div>
+    
+    
+            <div class="image">
+    <img class="one-image" src="image/640d587190971b4ff60bcefa_home-hero-p-2000.webp" >
+    <img class="tow-image" src="image/64129be0def53d4a584f6bcf_home-hero-mobile.webp" alt="">
+            </div>
+    
+    
+    
+        </div>
+    </section>
+
+
+
+
+
+    <div class="portfolio">
+        <div class="containar">
+<div class="title portfolio_title">
+    <h1>  </h1>
+
+</div>
+        </div>
+        <div class="grid-image">
+<div class="portfolio-image"> <img src="image/portfolio/1.png" alt="" srcset="">
+<img class="hover" src="image/portfolio_hover/1.png" alt="" srcset="">
+</div>
+<div class="portfolio-image"> <img src="image/portfolio/2.png" alt="" srcset="">
+    <img class="hover" src="image/portfolio_hover/2.png" alt="" srcset="">
+</div>
+<div class="portfolio-image"> <img src="image/portfolio/3.png" alt="" srcset="">
+    <img class="hover" src="image/portfolio_hover/3.png" alt="" srcset="">
+</div>
+<div class="portfolio-image"> <img src="image/portfolio/4.png" alt="" srcset="">
+    <img class="hover" src="image/portfolio_hover/4.png" alt="" srcset="">
+</div>
+<div class="portfolio-image"> <img src="image/portfolio/5.png" alt="" srcset="">
+    <img class="hover" src="image/portfolio_hover/5.png" alt="" srcset="">
+</div>
+<div class="portfolio-image">
+     <img src="image/portfolio/6.png" alt="" srcset="">
+    <img class="hover" src="image/portfolio_hover/6.png" alt="" srcset="">
+</div>
+<div class="portfolio-image"> 
+    <img src="image/portfolio/7.png" alt="" srcset="">
+    <img class="hover" src="image/portfolio_hover/7.png" alt="" srcset="">
+
+</div>
+<div class="portfolio-image">
+     <img src="image/portfolio/8.png" alt="" srcset="">
+     <img class="hover" src="image/portfolio_hover/8.png" alt="" srcset="">
+
+</div>
+<div class="portfolio-image">
+     <img src="image/portfolio/9.png" alt="" srcset="">
+     <img class="hover" src="image/portfolio_hover/9.png" alt="" srcset="">
+
+</div>
+<div class="portfolio-image"> 
+    <img src="image/portfolio/11.png" alt="" srcset="">
+    <img class="hover" src="image/portfolio_hover/11.png" alt="" srcset="">
+
+</div>
+<div class="portfolio-image">
+     <img src="image/portfolio/14.png" alt="" srcset="">
+     <img class="hover" src="image/portfolio_hover/14.png" alt="" srcset="">
+
+</div>
+<div class="portfolio-image"> <img src="image/portfolio/15.png" alt="" srcset="">
+ <img class="hover" src="image/portfolio_hover/15.png" alt="" srcset="">
+
+</div>
+     
+            
+        </div>
+    </div>
+    <div class="testmonial">
+        <div class="title">
+<!-- <h1>What my clients say</h1>
+<p>See what our clients have to say about their experience working with me and my team.</p>
+ -->
+
+        <section id="section_3">
+            <h1 id="title" >What my clients say</h1>
+            <p id="text" >See what my clients have to say about their experience working with me.</p>
+            
+
+
+
+        </div>
+        <div class="boxs padding">
+            
+            <div class="box ">
+                <img src="image/640d37ef1b9815d7e4aa31e2_client-logo-03.svg" alt="" srcset="">
+                <h2>Lorem ipsum dolor sit amet consectetur </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae consequuntur quis libero, labore ut possimus voluptas unde sint quidem natus excepturi, alias deleniti expedita quos! Similique vitae ab quidem.</p>
+                <div class="footer-box">
+                    <img src="image/64129fc2e9e64bbce70632e5_testimonials-author-01.webp" alt="">
+                   <div>
+                    <h2>SS</h2>
+                    <p>ss </p>
+                   </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/640d37ef1b9815d7e4aa31e2_client-logo-03.svg" alt="" srcset="">
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae consequuntur quis libero, labore ut possimus voluptas unde sint quidem natus excepturi, alias deleniti expedita quos! Similique vitae ab quidem.</p>
+                <div class="footer-box">
+                    <img src="image/64129fc2e9e64bbce70632e5_testimonials-author-01.webp" alt="">
+                   <div>
+                    <h2>SS</h2>
+                    <p>ss </p>
+                   </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/640d37ef1b9815d7e4aa31e2_client-logo-03.svg" alt="" srcset="">
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae consequuntur quis libero, labore ut possimus voluptas unde sint quidem natus excepturi, alias deleniti expedita quos! Similique vitae ab quidem.</p>
+                <div class="footer-box">
+                    <img src="image/64129fc2e9e64bbce70632e5_testimonials-author-01.webp" alt="">
+                   <div>
+                    <h2>SS</h2>
+                    <p>ss </p>
+                   </div>
+                </div>
+            </div>
+            <!-- <div class="box">
+                <img src="image/640d37ef1b9815d7e4aa31e2_client-logo-03.svg" alt="" srcset="">
+                <h2>Exceptional web design that exceeded our expectations</h2>
+                <p>Our website redesign surpassed our expectations. Aiko's attention to detail and creativity resulted in a visually stunning and user-friendly site that immediately boosted our online presence.</p>
+                <div class="footer-box">
+                    <img src="image/64129fc2e9e64bbce70632e5_testimonials-author-01.webp" alt="">
+                   <div>
+                    <h2>SS</h2>
+                    <p>ss </p>
+                   </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/640d37ef1b9815d7e4aa31e2_client-logo-03.svg" alt="" srcset="">
+                <h2>Exceptional web design that exceeded our expectations</h2>
+                <p>Our website redesign surpassed our expectations. Aiko's attention to detail and creativity resulted in a visually stunning and user-friendly site that immediately boosted our online presence.</p>
+                <div class="footer-box">
+                    <img src="image/64129fc2e9e64bbce70632e5_testimonials-author-01.webp" srcset="image/640e938ebe4a44687560f8d8_about-hero (1).webp 480w" alt="">
+                   <div>
+                    <h2>SS</h2>
+                    <p>ss </p>
+                   </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/640d37ef1b9815d7e4aa31e2_client-logo-03.svg" alt="" srcset="">
+                <h2>Exceptional web design that exceeded our expectations</h2>
+                <p>Our website redesign surpassed our expectations. Aiko's attention to detail and creativity resulted in a visually stunning and user-friendly site that immediately boosted our online presence.</p>
+                <div class="footer-box">
+                    <img src="image/64129fc2e9e64bbce70632e5_testimonials-author-01.webp" alt="">
+                   <div>
+                    <h2>SS</h2>
+                    <p>ss </p>
+                   </div>
+                </div>
+            </div> -->
+    </div>
+    </div>
+
+
+
+</section>
+
+<section id="section_4">
+    <!-- about-us -->
+        <div class="padding">
+            <div class="about-us">
+                <div class="image-about">
+                    <div class="icons">
+                        <!-- <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt=""> -->
+                        <a href="https://www.instagram.com/chena.design/" target="_blank"> <i  class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/chena.design/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/chena.design/" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                        
+                    </div>
+                    <img src="image/640e938ebe4a44687560f8d8_about-hero.webp" alt="" srcset="">
+                    <div class="card">
+                        <h3>Chaima Nacer</h3>
+                    </div>
+                </div>
+                <div class="text-about">
+                    <span>about</span>
+                    <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                    <p>Brand Designer & Illustrator based in the Algeria. <br> Hic recusandae consequuntur quis libero, labore ut possimus voluptas unde sint quidem<br>natus excepturi, alias deleniti expedita quos! Similique vitae ab quidem.</p>
+                </div>
+            </div>
+        </div>
+
+
+</section>
+    <!-- about-us -->
+    <!-- contact -->
+
+
+<section id="section_5">
+
+
+   <div class="contact">
+                <h5  >Let's talk</h5>
+                <p >Let's make your Brand shine.</p>
+
+                <a href="./contact.html">
+                    <button >Get in Touch</button>
+                </a>
+   </div>
+
+</section>
+
+     <!-- contact -->
+     <!-- <footer>
+        <div class="footer-text">
+         2023 <span>&copy;</span> All rights reserved by Chena.
+        </div>
+    <div class="footer-icon">
+        <span>TO TOP</span>
+        <button id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    </footer> -->
+
+
+
+</body>
+</html>

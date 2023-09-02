@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="responsive.css">
+
+  <!-- <style>
+    .illustration {
+      width: 300px;
+    }
+  </style> -->
+
+<title>Chena</title>
+<style>
+
+@font-face {
+  font-family: "Sora";
+  src: url("sora-font/Sora-Regular.ttf") format("truetype");
+  /* Add more font variations (e.g., bold, italic) if available */
+}
+
+/* Rest of your CSS cod e */
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  position: relative;
+  margin: 80px 0 80px 0;
+  background-color: #FFFDFB;
+  color: #000000;
+}
+
+.arrow {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+} 
+
+
+.left-arrow {
+  left:140px;
+}
+.left-arrow  img {
+  cursor: pointer;
+  margin-left: 194px;
+}
+.right-arrow {
+  right:140px;
+}
+.right-arrow  img {
+  cursor: pointer;
+  margin-right: 194px;
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.review-container img {
+  height: 75px;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+#svg-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* .section-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 20px;
+} */
+.section-icon img {
+transform: translateX(-50%);
+margin-top: -50px;
+}
+.customer-review {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #FFFDFB;
+  margin: 0;
+}
+
+    ------------------------------------------------------
+
+    /* Logo styles */
+
+    ---------------------------------------------------------
+/* header {
+  height: 140px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* Header styles */
+
+/* .content1 {
+   max-width:1140px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+} */
+
+/* header img.logo {
+  /* margin-left:380px; */
+  /* width: 196px;
+} */
+/* .header {
+      background-color: #000000;
+      max-width: 1617px;
+      height: 135px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+.logo img {
+      max-height: 60%;
+      max-width: 100%;
+    } */
+    
+    /* Social icon styles */
+    /* .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .social-icons a img {
+      max-height: 100%;
+      max-width: 100%;
+    } */
+
+/* .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; */
+  /* margin-right: 380px; 
+}*/
+
+/* .social-icons img {
+  height: 19px;
+  margin-left: 18px;
+} */
+
+
+.main-section {
+  background-color: #000000 !important;
+}
+.main-section {
+    background-color: #000;
+}
+.content {
+  /* display: flex;
+  padding: 280px 20px;
+  height: 420px;
+  justify-content: space-evenly;
+  background-color: #fffdfb;
+  color: #000000; */
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 280px 20px;
+  height: 420px;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #FFFDFB;
+}
+
+.content .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .left h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+  width: 400px;
+}
+
+.content .left p {
+  font-size: 17px;
+  font-weight:normal;
+  margin: 0;
+  margin-top: 8px;
+  width: 440px;
+
+  text-align: justify;
+  text-align-last: left;
+}
+
+.content img {
+  margin-right: -65px;
+}
+
+/*.content .left button {
+  font-size: 20px;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000000;
+  width: 200px;
+  height: 62px;
+}
+.content .left button:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.4s;
+}*/
+/* .content .right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 380px;
+  background-color: #FFFDFB;
+} */
+
+
+
+/* .content .right img {
+  width: 280px;
+  height: 280px;
+} */
+
+/*.grid-images {
+  background-color: #FFFDFB;
+  margin: 0 140px;
+  display: grid;
+  grid-template-columns: repeat(4, 377px);
+  grid-template-rows: repeat(4, 377px);
+  gap: 44px;
+  justify-content: center;
+  align-content: center;
+}*/
+
+
+
+.grid-images {
+ 
+    /* max-width: 1610px;
+    margin: 0 auto; */
+    /* background-color: #FFFDFB; */
+    /* margin: 30px 140px 0 140px; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(4, 377px); */
+    /* gap: 30px; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* gap: 30px;*/
+}
+
+.grid-images img {
+  width: 100%;
+  height: auto;
+}
+
+/* .grid-images img:hover {
+  filter: grayscale(100%)
+} */
+
+footer {
+  height: 100px;
+  background-color: #000000;
+  color: #fffdfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+footer span {
+  color: #fffdfb;
+}
+
+.pagination {
+  text-align: center;
+  margin: 40px 0;
+}
+.pagination a {
+    margin: 0 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.pagination a.current-page {
+    font-weight: bold;
+    color: #E8684D;
+}
+
+.contact-section {
+  display: flex;
+  background-color: #fffdfb;
+  height: 400px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contact-half {
+  flex: 1;
+}
+
+.contact-left {
+  margin-left: 331px;
+  color: #000000;
+  margin-top: 62px;
+}
+
+.contact-title {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  width: 300px;
+}
+
+.contact-text {
+  font-size: 17px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  width: 360px;
+
+}
+
+.contact-email {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 0 0 0;
+}
+
+.contact-right {
+  margin-right: 340px;
+}
+
+.contact-container {
+  display: grid;
+  margin-top: 80px;
+  grid-template-columns: 281px auto;
+  gap: 30px;
+  padding-bottom: 37px;
+}
+
+
+.contact-input {
+  width: 240px;
+  height: 54px;
+  background-color: #fffdfb;
+  border: 1.5px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-button {
+  width: 281px;
+  height: 54px;
+  background-color: #000000;
+  border: 1.5px solid #000000;
+  color: #fffdfb;
+  font-size: 16px;
+  margin-top: -84px;
+}
+
+.contact-subject {
+  width: 395px;
+  height: 54px;
+  background-color: #fffdfb;
+  border: 1.5px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-message {
+  width: 395px;
+  height: 98px;
+  background-color: #fffdfb;
+  border: 1.5px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  padding: 20px;
+}
+.section-title {
+    color: #000000;
+    margin: 20px 335px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-title {
+        position: relative;
+    }
+
+    .title3::after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: -7px;
+      width: 15%;
+      height: 12px;
+      background-color: #E8684D;
+      z-index: -1;
+    }
+
+    .title1::after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: -7px;
+      width: 12.1%;
+      height: 12px;
+      background-color: #E8684D;
+      z-index: -1;
+    }
+
+
+    .title2::after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: -7px;
+      width: 20.65%;
+      height: 12px;
+      background-color: #E8684D;
+      z-index: -1;
+    }
+
+/* .title1 {
+  position: relative;
+}
+
+.title1::after {
+  content: "";
+  position: absolute;
+  bottom: 17px;
+  left: 358px;
+  width: calc(67.1vw - 20px);
+  height: 1.6px;
+  background-color: #000000;
+}
+
+.title2 {
+  position: relative;
+  padding-top: 80px;
+}
+
+.title2::after {
+  content: "";
+    position: absolute;
+    bottom: 19px;
+    left: -140px;
+    width: calc(4.8vw - 14px);
+    height: 1.6px;
+    background-color: #000000;
+}
+
+.title3 {
+  position: relative;
+}
+
+.title3::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 286px;
+  width: calc(70.6vw - 20px);
+  height: 1.6px;
+  background-color: #000000;
+} */
+
+
+
+
+
+
+.previous-button:hover img,
+.next-button:hover img {
+  cursor: pointer;
+  color: red;
+}
+
+.page-link {
+  font-family: sora;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+.page-link img {
+  width: 70px; /* Adjust the desired width */
+  height: 16px; Adjust the desired height
+  display: flex;
+  align-items: center;
+}
+
+.page-link {
+  background: none;
+  border: none;
+}
+
+
+.portfolio-image {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-image:hover {
+  transform:scale(1.01, 1.01)
+   /**********----------*******/
+}
+/* .section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: calc(100vw - 20px);
+  height: 2px;
+  background-color: #000000;
+} */
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- ------------------------- -->
+<style>
+    header {
+      /* padding: 0px 120px 0px 120px; */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #000000;
+      height: 125px;
+      /* display: flex;
+      align-items: center; 
+      justify-content: space-between; */
+      transition: opacity 0.6s;
+      opacity: 1; /* Added initial opacity */
+      z-index: 1; /* Added z-index to keep the header above other elements */
+    }
+
+    .logo img {
+      width: 196px;
+      /* margin-left: 338px; */
+    }
+    
+    /* Social icon styles */
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      /* margin-right: 338px; */
+    }
+    
+    .social-icons a img {
+      width: 28px;
+    }
+</style>
+  <header>
+
+    <script>
+
+      // Get the header element
+  const header = document.querySelector('header');
+  
+  let lastScrollPosition = 0;
+  
+  // Function to handle the scroll event
+  function handleScroll() {
+    // Get the current scroll position
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+    // Check if scrolling down
+    if (currentScrollPosition > lastScrollPosition) {
+      header.style.opacity = '0'; // Hide the header
+    } else {
+      header.style.opacity = '1'; // Show the header
+    }
+  
+    // Update the last scroll position
+    lastScrollPosition = currentScrollPosition;
+  }
+  
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll);
+
+
+  
+    </script>
+    <!-- <script src="Index.js"></script> -->
+
+    
+      <!-- <a href="https://chena.pro">
+        <img src="logo.png" alt="Logo" class="logo">
+      </a>    
+      <div class="social-icons">
+        <a href="https://99designs.com/profiles/chenadesign" target="_blank">
+          <img src="Dribbble.png" alt="Social Icon 1">
+        </a>
+        <a href="https://instagram.com/chena.design/" target="_blank">
+          <img src="Instagram.png" alt="Social Icon 3">
+        </a>
+        <a href="https://dribbble.com/chena_" target="_blank">
+          <img src="Behance.png" alt="Social Icon 2">
+        </a>
+      </div> -->
+
+   <div class="continer1">
+      <a href="https://chena.pro">
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+        </div>
+      </a>
+      
+      <div class="social-icons">
+        <a href="https://99designs.com/profiles/chenadesign"><img src="Dribbble.png" alt="Social Icon 1"></a>
+        <a href="https://instagram.com/chena.design"><img src="Instagram.png" alt="Social Icon 2"></a>
+        <a href="https://dribbble.com/chena__"><img src="Behance.png" alt="Social Icon 3"></a>
+      </div>
+    </div>
+  </header>
+
+  <style>
+
+.continer1 {
+  display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1140px !important;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+  </style>
+ 
+
+
+
+
+  <!-- ------------------------ -->
+  
+  <div class="main-section">
+    <div class="content">
+      <div class="left">
+        <h1 class="title">Welcome to my world.</h1>
+        <p>I'm Chena. Design is my language, and I use it to tell compelling stories that resonate with audiences.
+          From conceptualizing unique brand identities to designing eye-catching marketing materials.
+          <!-- the goal is to convey the intended message to the target audience effectively.           -->
+  <!-- The work of Chena is based on five years of experience as a graphic designer with a focus on high-quality designs that adhere to design principles and the brief of the client to ensure getting the most of the design to reach and deliver the intended message by the brief to the target audience. -->
+        
+        </p>
+        
+      </div>
+
+
+
+
+      
+      <div class="right">
+
+        <div class="illustration">
+          <img src="illustration.gif" alt="" style="width: 450px;">
+        </div>
+
+        <!-- <script>
+          // Load the SVG file
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', './illustration.gif', true);
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              var svgContent = xhr.responseText;
+              document.getElementById('illustration').innerHTML = svgContent;
+      
+              // Animate the SVG
+              anime({
+                targets: '#illustration path',
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 1500,
+                delay: function(el, i) { return i * 250 },
+                direction: 'alternate',
+                loop: true
+              });
+            }
+          };
+          xhr.send(); -->
+        </script>
+
+
+
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- ------ -->
+
+
+  <div class="Portfolio">
+
+    <h1 class="section-title title1">Creative <br>Portfolio</h1>
+    <div class="grid-images" id="gridImages"></div>
+    
+    <div class="pagination" id="pagination"></div>
+
+  </div>
+
+
+
+
+<script src="script.js"></script>
+
+
+
+  <!-- ------------- -->
+
+  <style>
+    .review-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Optional: hide scrollbar */
+      -ms-overflow-style: none; /* Optional: hide scrollbar */
+    }
+  
+    .review-container::-webkit-scrollbar {
+      display: none; /* Optional: hide scrollbar */
+    }
+  
+    .fade-in {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+  
+    .fade-in.active {
+      opacity: 1;
+    }
+
+    .customer-review {
+      width: 590px;
+      font-size: 17px;
+    }
+  </style>
+  
+  <h1 class="section-title title2">Client <br> Testimonials</h1>
+  <div class="container">
+    <div class="arrow left-arrow" onclick="previousReview()">
+      <img src="left-arrow.svg" alt="" srcset="">
+    </div>
+    <div class="review-container" ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
+      <div>
+        <img src="./99.svg" alt="">
+      </div>
+      <div class="review-content">
+        <p class="customer-review fade-in"></p>
+        <p class="customer-name fade-in"></p>
+      </div>
+    </div>
+    <div class="arrow right-arrow" onclick="nextReview()">
+      <img src="right-arrow.svg" alt="" srcset="" color="red">
+    </div>
+  </div>
+  
+  <script>
+    // const reviews = [
+    //   {
+    //     review: "Chena was very attentive, creative, resourceful, imaginative, and professional. He made sure I felt comfortable with every aspect of the design and worked hard to get al the details right. I would work with him again!!",
+    //     name: "Vivacity Pilates"
+    //   },
+    //   {
+    //     review: "Praesent eu enim nec quam sollicitudin placerat nec sit amet mi.",
+    //     name: "Jane Smith"
+    //   },
+    //   {
+    //     review: "Vivamus vitae finibus orci, vel maximus lorem.",
+    //     name: "David Johnson"
+    //   },
+    //   {
+    //     review: "Nulla vitae est euismod, ullamcorper lectus quis, feugiat quam.",
+    //     name: "Emily Davis"
+    //   }
+    // ];
+  
+    // let currentReviewIndex = 0;
+    // let touchStartX = 0;
+    // let touchEndX = 0;
+  
+    // function showReview(index) {
+    //   const review = reviews[index];
+    //   const reviewElement = document.querySelector(".customer-review");
+    //   const nameElement = document.querySelector(".customer-name");
+  
+    //   // Apply fade-in animation class
+    //   reviewElement.classList.remove("active");
+    //   nameElement.classList.remove("active");
+  
+    //   // Update review content
+    //   reviewElement.textContent = review.review;
+    //   nameElement.textContent = review.name;
+  
+    //   // Trigger reflow to restart the animation
+    //   void reviewElement.offsetWidth;
+    //   void nameElement.offsetWidth;
+  
+    //   // Add fade-in animation class after a short delay
+    //   setTimeout(() => {
+    //     reviewElement.classList.add("active");
+    //     nameElement.classList.add("active");
+    //   }, 100);
+    // }
+  
+    // function previousReview() {
+    //   currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+    //   showReview(currentReviewIndex);
+    // }
+  
+    // function nextReview() {
+    //   currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+    //   showReview(currentReviewIndex);
+    // }
+  
+    // function handleTouchStart(event) {
+    //   touchStartX = event.touches[0].clientX;
+    // }
+  
+    // function handleTouchMove(event) {
+    //   touchEndX = event.touches[0].clientX;
+    //   handleSwipe();
+    // }
+  
+    // function handleSwipe() {
+    //   const threshold = 100; // Minimum swipe distance required
+    //   const delta = touchEndX - touchStartX;
+  
+    //   if (delta > threshold) {
+    //     // Swiped right, go to previous review
+    //     previousReview();
+    //   } else if (delta < -threshold) {
+    //     // Swiped left, go to next review
+    //     nextReview();
+    //   }
+    // }
+  
+    // showReview(currentReviewIndex);
+    // Samantha Collins
+    
+    const reviews = [
+  {
+    review: "Chena was very attentive, creative, resourceful, imaginative, and professional. He made sure I felt comfortable with every aspect of the design and worked hard to get all the details right. I would work with him again!!",
+    name: "Vivacity Pilates"
+  },
+  {
+    review: "Chena did a very good job, he understood immediately what I wanted and could create exactly what I wanted. He is a very friendly and fast replaying person. Thank you very much for your job!",
+    name: "Ursina Mauri"
+  },
+  {
+    review: "Chena are truly remarkable. He transformed my ideas into a visually captivating design that perfectly represents my brand. I am grateful for his expertise and would definitely collaborate with him again.",
+    name: "Joseph Anderson"
+  },
+  {
+    review: "I submitted a contest for 6 logos for my brand I loved the two designs created by Chena. Even though he submitted later in the contest, I loved his work and it was a clear choice for me. The revisions were done quickly and I was pleased. I would definitely recommend and use Chaima for future projects.",
+    name: "Stephanie Navarro"
+  }
+];
+
+let currentReviewIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+
+function showReview(index) {
+  const review = reviews[index];
+  const reviewElement = document.querySelector(".customer-review");
+  const nameElement = document.querySelector(".customer-name");
+
+  // Apply fade-in animation class
+  reviewElement.classList.remove("active");
+  nameElement.classList.remove("active");
+
+  // Update review content
+  reviewElement.textContent = review.review;
+  nameElement.textContent = review.name;
+
+  // Trigger reflow to restart the animation
+  void reviewElement.offsetWidth;
+  void nameElement.offsetWidth;
+
+  // Add fade-in animation class after a short delay
+  setTimeout(() => {
+    reviewElement.classList.add("active");
+    nameElement.classList.add("active");
+  }, 100);
+}
+
+function previousReview() {
+  currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+  showReview(currentReviewIndex);
+}
+
+function nextReview() {
+  currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+  showReview(currentReviewIndex);
+}
+
+function handleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+  touchEndX = event.touches[0].clientX;
+  handleSwipe();
+}
+
+function handleSwipe() {
+  const threshold = 100; // Minimum swipe distance required
+  const delta = touchEndX - touchStartX;
+
+  if (delta > threshold) {
+    // Swiped right, go to previous review
+    previousReview();
+  } else if (delta < -threshold) {
+    // Swiped left, go to next review
+    nextReview();
+  }
+}
+
+function startReviewRotation() {
+  setInterval(() => {
+    nextReview();
+  }, 800000);
+}
+
+showReview(currentReviewIndex);
+startReviewRotation();
+  </script>
+  
+  
+
+
+    <!-- ------------------ -->
+    <script>
+      $(document).ready(function() {
+        $('.contact-button').click(function(e) {
+          e.preventDefault();
+          
+          // Disable the submit button
+          $(this).prop('disabled', true);
+          
+          var name = $('.contact-input[name="name"]').val();
+          var subject = $('.contact-subject').val();
+          var email = $('.contact-input[name="email"]').val();
+          var message = $('.contact-message').val();
+          
+          // Validate the form fields
+          if (name === '' || subject === '' || email === '' || message === '') {
+            alert('Please fill in all the required fields.');
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+            return;
+          }
+    
+          // Validate the email format
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email.match(emailRegex)) {
+            alert('Please enter a valid email address.');
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+            return;
+          }
+    
+          // Send form data to PHP server
+          $.post('send_email.php', {
+            name: name,
+            subject: subject,
+            email: email,
+            message: message
+          }, function(response) {
+            // Handle the response from the server
+            if (response === 'success') {
+              alert(response);
+              // Reset the form
+              $('.contact-container')[0].reset();
+            } else {
+              alert(response);
+            }
+            
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+          });
+        });
+      });
+    </script>
+    
+
+
+<style>
+  .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fffdfb;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .contact-button:hover {
+    background-color: #000000;
+  }
+  .contact-email{
+    color: #000000;
+    margin-top: 90px;
+  }
+</style>
+
+
+  </div>
+  <h1 class="section-title title3">Let's <br> Connect</h1>
+  <div class="contact-section">
+    <div class="contact-half contact-left">
+      <h1 class="contact-title">Ready to collaborate?</h1>
+      <p class="contact-text">Discover me on social media, establish a connection via this form, or reach out to me directly.
+      </p>
+      
+<a href="mailto:contact@chena.pro" class="contact-email" style="margin-top: 20px;">contact@chena.pro</a>
+    </div>
+    <div class="contact-half contact-right">
+      <div class="contact-container">
+
+        <input type="text" class="contact-input" name="name" placeholder="Name">
+<input type="text" class="contact-subject" placeholder="Subject">
+<input type="text" class="contact-input" name="email" placeholder="Email">
+<textarea class="contact-message" name="message" placeholder="Message"></textarea>
+
+
+
+        <button class="contact-button">Submit</button>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- ----------------------- -->
+
+  <footer>
+    <p>&#169; 2023 All rights reserved by Chena</p>
+  </footer>
+  
+</body>
+</html>

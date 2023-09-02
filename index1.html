@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Section Page</title>
+    <style>
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #section1 {
+            background-color: #f1c40f;
+        }
+
+        #section2 {
+            background-color: #e74c3c;
+            opacity: 0; 
+            transition: opacity 1s; 
+        }
+
+        #section3 {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="section1">
+        <h1>Section 1</h1>
+    </section>
+
+    <section id="section2">
+        <h1> ghghghghgh hhhhhhhhhhhhhhimation</h1>
+    </section>
+
+    <section id="section3">
+        <h1>Section 3</h1>
+    </section>
+
+    <script>
+
+window.addEventListener("scroll", function () {
+            const section2 = document.getElementById('section2');
+            const section2Top = section2.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+
+
+            if (section2Top < screenHeight && section2Top > 0) {
+                section2.style.opacity = "1";  
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<?php
+$message = ''; // Initialize an empty message
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Form was submitted, process it
+    // ... (Your form processing logic)
+    // Update $message based on the email sending result
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chillax.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>contect</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+               <div class="logo">
+              <!-- <h1>chena</h1> -->
+
+              <a href="./index.html">
+
+               <img src="image/65656.png" alt="">
+             </a>
+
+
+              <span>available</span>
+               </div>
+               <nav>
+                   <img src="image/Menu_Icon.png" alt="">
+                   <ul>
+                       <li>
+                           <a href="#">serveces</a>
+                       </li>
+                       <li>
+                           <a href="#">work</a>
+                       </li>
+                       <li>
+                           <a href="#">about</a>
+                       </li>
+                       <!-- <button>let's talk</button> -->
+
+
+
+                       <a href="./contact.html">
+                        <button>let's talk</button>
+    
+                    </a>
+
+
+
+                   </ul>
+                
+               </nav>
+           </div>
+           </header>
+           <div class="contact-">
+           <div class="contact-tow">
+            <div class="imdge-tow">
+                <img src="image/contect-image.webp" alt="" srcset="">
+            </div>
+            <div class="contect-text">
+                <div class="text">
+                    <h6>Contact</h6>
+                    <p>Let’s get in touch.</p>
+                </div>
+          
+
+                <div class="put-contect">
+                    <input type="text" class="contact-input" name="name" id="" placeholder="Your Name">
+                    <input type="email" class="contact-input" name="email" id="" placeholder="Your Email">
+                    <input type="text" class="contact-input" name="subject" id="" placeholder="Your Subject">
+
+                    <textarea name="contact-message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input class="contact-button" type="button" value="SEND MESSEGE">
+                </div>
+
+            
+                
+            </div>
+           </div>
+        </div>
+        <!-- <footer>
+            <div class="footer-text">
+             2023 <span>&copy;</span> All rights reserved by Chena.
+            </div>
+        </footer> -->
+
+
+
+        <script>
+      $(document).ready(function() {
+        $('.contact-button').click(function(e) {
+          e.preventDefault();
+          
+          // Disable the submit button
+          $(this).prop('disabled', true);
+          
+          var name = $('.contact-input[name="name"]').val();
+          var subject = $('.contact-input[name="subject"]').val();
+          var email = $('.contact-input[name="email"]').val();
+          console.log(email);
+          console.log("==============");
+          var message = $('.contact-message').val();
+          
+          // Validate the form fields
+          if (name === '' || subject === '' || email === '' || message === '') {
+            alert('Please fill in all the required fields.');
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+            return;
+          }
+    
+          // Validate the email format
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email.match(emailRegex)) {
+            alert('Please enter a valid email address.');
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+            return;
+          }
+    
+          // Send form data to PHP server
+          $.post('send_email.php', {
+            name: name,
+            subject: subject,
+            email: email,
+            message: message
+          }, function(response) {
+            // Handle the response from the server
+            if (response === 'success') {
+              alert(response);
+              // Reset the form
+
+              $('.contact-input[name="name"]').val()="";
+           $('.contact-subject').val()="";
+          $('.contact-input[name="email"]').val()="";
+          $('.contact-message').val()="";
+            } else {
+              alert(response);
+            }
+            
+            // Enable the submit button
+            $('.contact-button').prop('disabled', false);
+          });
+        });
+      });
+    </script>
+    
+</body>
+</html>
